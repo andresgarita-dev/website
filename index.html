@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <title>Andrés Garita | Costa Rica</title>
-    <meta name="description" content="Web developer from Costa Rica">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Python, Kubernetes, Django, CI/CD">
+    <title>Andrés Garita | Informática Costa Rica</title>
+    <meta name="description" content="Sistemas Empresariales y páginas web en Costa Rica">
+    <meta name="keywords" content="Aplicaciones Web, Comercio electrónico, Programación, Páginas Web">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="static/dark_theme/img/favicon.png">
@@ -17,8 +17,20 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="static/dark_theme/css/all.css">
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/dark_theme/css/custom.css">
+
 
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NVZ3TCWBMC"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NVZ3TCWBMC');
+  </script>
   <body onload="startTime()">
 
     <!-- PRELOADER -->
@@ -36,9 +48,10 @@
 
       <!-- NAVIGATION -->
       <nav>
-        <a href="#home" class="active"><i class="fa fa-home"></i><span>Home</span></a>
-        <a href="#about"><i class="fa fa-user"></i><span>About</span></a>
-        <a href="#inspiration"><i class="fa fa-quote-right" aria-hidden="true"></i><span>Inspiration</span></a>
+        <a href="#home" class="active"><i class="fa fa-home"></i><span>Inicio</span></a>
+        <a href="#services"><i class="fa fa-briefcase"></i><span>Servicios</span></a>
+        <a href="#about"><i class="fa fa-user"></i><span>Conóceme</span></a>
+        <a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i><span>Contacto</span></a>
       </nav>
       <!-- /NAVIGATION -->
 
@@ -52,7 +65,7 @@
               <li><a class="fa-brands fa-github" href="https://github.com/andresgarita-dev" target="_blank"></a></li>
               <li><a class="fa-brands fa-x-twitter" href="https://twitter.com/andresgaritacr" target="_blank"></a></li>
               <li><a class="fa-brands fa-youtube" href="https://www.youtube.com/@AndresGaritaDev" target="_blank"></a></li>
-              <li><a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/andres-garita-flores/" target="_blank"></a></li>
+              <li><a class="fa-brands fa-whatsapp" href="https://wa.me/50684754193" target="_blank"></a></li>
             </ul>
           </div>
           <!-- /SOCIALS -->
@@ -74,12 +87,12 @@
             <!-- TITLE -->
             <div class="row">
               <div class="col-xs-12 lj-title">
-                <div>I love
+                <div>Desarrollo
                   <div class="rotate"><ul class="texts">
-                    <li>Web Programming</li>
-                    <li>Python</li>
-                    <li>Cloud</li>
-                    <li>Technology</li>
+                    <li>Sistemas Empresariales</li>
+                    <li>Páginas Web</li>
+                    <li>Comercio Electrónico</li>
+                    <li>Soluciones Cloud</li>
                   </ul></div></div>
               </div>
             </div>
@@ -88,7 +101,8 @@
             <!-- TEXT PARAGRAPH -->
             <div class="row">
               <div class="col-xs-12 lj-title-paragraph">
-                <p>Senior Full-Stack Web Developer with 8+ years of experience delivering Enterprise Solutions.</p>
+                <p>Imagina tu empresa creciendo con tecnología y soluciones a la medida</p>
+                <a class="service-button" href="https://wa.me/50684754193" target="_blank"><i class="fa-brands fa-whatsapp"></i> Solicita una consulta</a>
               </div>
             </div>
             <!-- /TEXT PARAGRAPH -->
@@ -96,136 +110,110 @@
           </div>
           <!-- /PAGE #HOME -->
 
-          <!-- PAGE #FEATURES -->
-          <div id="about" class="subpage">
+          <!-- PAGE #SERVICES -->
+          <div id="services" class="subpage">
             <div class="row">
               <div class="col-sm-6">
 
                 <!-- TITLE -->
-                <h2>About</h2>
+                <h2>Servicios</h2>
                 <!-- /TITLE -->
 
                 <!-- TEXT PARAGRAPH -->
-                <p>I'm a full-stack developer with expertise in building web applications from the ground up. I leverage the latest technologies and frameworks to create robust and scalable solutions.</p>
+                <p>Desarrollo soluciones tecnológicas personalizadas, desde sistemas empresariales hasta páginas web y comercio electrónico.</p>
                 <!-- TEXT PARAGRAPH -->
 
                 <!-- FEATURES LIST -->
                 <ul>
                   <li>
-                    <span>Development</span>
-                    <p>I utilize frameworks like Flask and Django to craft dynamic backend and user-friendly frontend experiences.</p>
+                    <i class="fas fa-laptop-code"></i><span>Páginas Web</span>
+                    <p>Creo páginas web modernas y atractivas que destacan tu marca y atraen a nuevos clientes.</p>
                   </li>
                   <li>
-                    <span>Cloud</span>
-                    <p>Adept in leveraging cloud platforms like AWS, Oracle Cloud Infrastructure, and DigitalOcean to ensure efficient and cost-effective deployments.</p>
+                    <i class="fas fa-shopping-cart"></i><span>Comercio Electrónico</span>
+                    <p>Implemento plataformas de comercio electrónico que permiten a tus clientes comprar tus productos o servicios de manera fácil y segura.</p>
                   </li>
                   <li>
-                    <span>Deployment</span>
-                    <p>
-                      I deploy applications on various platforms including Kubernetes (k8s), Docker Swarm and EC2, ensuring optimal performance and reliability.
-                    </p>
+                    <i class="fas fa-database"></i><span>Sistemas Empresariales</span>
+                    <p>Desarrollo sistemas empresariales a la medida que optimizan tus procesos, mejorando la eficiencia y la productividad de tu empresa.</p>
+                  </li>
+                  <li>
+                    <i class="fas fa-cloud"></i><span>Soluciones Cloud</span>
+                    <p>Construyo soluciones Cloud que conectan tu negocio con tus clientes de manera fluida, segura y escalable.</p>
                   </li>
                 </ul>
-                <i class="fab fa-python fa-2x"></i>
-                <i class="fab fa-vuejs fa-2x"></i>
-                <i class="fab fa-aws fa-2x"></i>
-                <i class="fas fa-code-branch fa-2x"></i>
-                <i class="fas fa-cloud fa-2x"></i>
-                <i class="fas fa-laptop-code fa-2x"></i>
-                <i class="fas fa-database fa-2x"></i>
-                <i class="fas fa-server fa-2x"></i>
-
-                <i class="fas fa-coffee fa-2x"></i>
-
+                <div class="row">
+                  <div class="col-xs-12" style="margin-bottom: 50px;">
+                    <p id="p-service">¿Tienes una idea en mente?</p>
+                    <a class="service-button service-button-service" style="display: initial;" href="https://wa.me/50684754193" target="_blank">
+                      <i class="fa-brands fa-whatsapp wh-service"></i> Házmela saber</a>
+                  </div>
+                </div>
                 <!-- /FEATURES LIST -->
 
               </div>
             </div>
           </div>
-          <!-- /PAGE #FEATURES -->
+          <!-- /PAGE #SERVICES -->
+
+          <!-- PAGE #ABOUT -->
+          <div id="about" class="subpage">
+            <div class="row">
+              <div class="col-sm-6">
+
+                <!-- TITLE -->
+                <h2>Conóceme</h2>
+                <!-- /TITLE -->
+
+                <!-- TEXT PARAGRAPH -->
+                <p>¡Hola! Soy Andrés Garita y te ayudo a hacer crecer tu empresa con tecnología y soluciones a la medida. Acá te comparto los puntos más relevantes de mi carrera profesional.</p>
+                <!-- TEXT PARAGRAPH -->
+
+                <!-- FEATURES LIST -->
+                <ul>
+                  <li>
+                    <i class="fa fa-graduation-cap"></i><span>Formación Académica</span>
+                    <p>Graduado como Bachiller en Ingeniería Informática en la Universidad Estatal a Distancia (UNED) en 2017 y miembro del Colegio de Profesionales en Informática y Computación (CPIC) desde 2019.</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-certificate"></i><span>Certificaciones</span>
+                    <p>Certificado en Oracle Cloud Infrastructure 2022 Certified Foundations Associate (2023) y otras más que están por venir.</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-handshake"></i><span>Clientes</span>
+                    <p>
+                      Colaborador de planilla para distintas empresas y freelancer para la instituciones como la UNED y el Programa Estado de la Nación (PEN). También he trabajado con pequeñas startups para ayudarles a lograr sus objetivos.
+                    </p>
+                  </li>
+<!--                  <li>-->
+<!--                    <i class="fa fa-file"></i><span>Currículo</span>-->
+<!--                    <p>Puedes ver mi currículo completo <a href="https://andresgarita.com/cv.pdf" style="text-decoration: underline;" target="_blank">aquí.</a></p>-->
+<!--                  </li>-->
+                </ul>
+                <!-- /FEATURES LIST -->
+
+              </div>
+            </div>
+          </div>
+          <!-- /PAGE #ABOUT -->
 
 
           <!-- PAGE #INSPIRATION -->
-          <div id="inspiration" class="subpage">
+          <div id="contact" class="subpage">
             <div class="row">
               <div class="col-sm-12">
 
                 <!-- TITLE -->
-                <h2>Inspiration</h2>
+                <h2>Contacto</h2>
                 <!-- /TITLE -->
 
                 <!-- TEXT PARAGRAPH -->
-                <p>They're some people who I'm inspired by.</p>
+                <p>Puedes contactarme a través de estos medios. Estaré complacido de poder ayudarte!</p>
+                <a class="service-button service-button-service" style="display: initial;" href="https://wa.me/50684754193" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                  <a class="service-button service-button-service" style="display: initial;" href="mailto:info@andresgarita.com" target="_blank">
+                    <i class="fa-brands fa-e-mail"></i> info@andresgarita.com</a>
                 <!-- /TEXT PARAGRAPH -->
-
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-sm-6">
-
-                <!-- TEAM MEMBER -->
-                <figure>
-                  <img src="static/dark_theme/img/Andrew_Tanenbaum.jpg" alt="">
-                  <figcaption>Andrew S. Tanenbaum
-                    <span>Computer scientist and professor emeritus of computer science at the Vrije Universiteit Amsterdam in the Netherlands. He created MINIX.</span>
-                    <div class="team-socials">
-                      <!--<a href="#!"><i class="fa fa-dribbble"></i></a>-->
-                      <!--<a href="#!"><i class="fa fa-behance"></i></a>-->
-                    </div>
-                  </figcaption>
-                </figure>
-                <!-- /TEAM MEMBER -->
-
-              </div>
-              <div class="col-sm-6">
-
-                <!-- TEAM MEMBER -->
-                <figure>
-                  <img src="static/dark_theme/img/guido.jpg" alt="">
-                  <figcaption>Guido van Rossum
-                    <span>Master's degree in Mathematics and Computer Science from the University of Amsterdam. He created Python.</span>
-                    <div class="team-socials">
-                      <!--<a href="#!"><i class="fa fa-github"></i></a>-->
-                      <!--<a href="#!"><i class="fa fa-codepen"></i></a>-->
-                    </div>
-                  </figcaption>
-                </figure>
-                <!-- /TEAM MEMBER -->
-
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-
-                <!-- TEAM MEMBER -->
-                <figure>
-                  <img src="static/dark_theme/img/nikola-tesla.jpg" alt="">
-                  <figcaption>Nikola Tesla
-                    <span>"Nikola Tesla was a Serbian-American inventor, electrical engineer, mechanical engineer, physicist. He contributed to the design of the modern alternating current electricity supply system" -Wikipedia.</span>
-                    <div class="team-socials">
-                      <!--<a href="#!"><i class="fa fa-dribbble"></i></a>-->
-                      <!--<a href="#!"><i class="fa fa-behance"></i></a>-->
-                    </div>
-                  </figcaption>
-                </figure>
-                <!-- /TEAM MEMBER -->
-
-              </div>
-              <div class="col-sm-6">
-
-                <!-- TEAM MEMBER -->
-                <figure>
-                  <img src="static/dark_theme/img/albert-einstein.jpg" alt="">
-                  <figcaption>Albert Einstein
-                    <span>One of the most popular scientist. He developed the general theory of relativity.</span>
-                    <div class="team-socials">
-                      <!--<a href="#!"><i class="fa fa-github"></i></a>-->
-                      <!--<a href="#!"><i class="fa fa-codepen"></i></a>-->
-                    </div>
-                  </figcaption>
-                </figure>
-                <!-- /TEAM MEMBER -->
 
               </div>
             </div>
@@ -265,7 +253,7 @@
               <script>
                 var today = new Date();
                 var currentYear = today.getFullYear();
-                document.write(currentYear + " &copy; All rights reserved. <a href=\"https://andresgarita.com\">Andrés Garita</a>");
+                document.write(currentYear + " &copy; <a href=\"https://andresgarita.com\">Andrés Garita</a> | Costa Rica");
               </script>
             </p>
           </div>
@@ -323,22 +311,6 @@
       }
       function myChange() {}
     </script>
-    <!-- Start of StatCounter Code for Default Guide -->
-    <script type="text/javascript">
-      var sc_project = 11255659;
-      var sc_invisible = 1;
-      var sc_security = "c3272ab1";
-      var scJsHost = (("https:" == document.location.protocol) ?
-        "https://secure." : "http://www.");
-      document.write("<sc" + "ript type='text/javascript' src='" +
-        scJsHost +
-        "statcounter.com/counter/counter.js'></" + "script>");
-    </script>
-    <noscript><div class="statcounter"><a title="web analytics"
-                                          href="http://statcounter.com/" target="_blank"><img
-        class="statcounter"
-        src="//c.statcounter.com/11255659/0/c3272ab1/1/" alt="web
-        analytics"></a></div></noscript>
-    <!-- End of StatCounter Code for Default Guide -->
+
   </body>
 </html>

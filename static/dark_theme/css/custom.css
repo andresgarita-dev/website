@@ -1,0 +1,33 @@
+.service-button {
+    display: inline-block;
+    background-color: white;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    font-size: 1.9rem;
+  }
+  .service-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  .service-button i {
+    margin-right: 10px;
+  }
+
+  .service-button-service {
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+
+  #services a i {
+    opacity: initial;
+  }
+
+  #p-service {
+    font-size: 2rem;
+    margin-bottom: -5px;
+  }
