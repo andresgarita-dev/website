@@ -290,6 +290,7 @@ header > canvas {
 	text-align: center;
 	background-color: transparent;
 	font-size: 1.25em;
+	font-weight: 900;
 }
 
 .lj-socials li a:hover {
@@ -353,13 +354,15 @@ header > canvas {
 
 /* 10. FEATURES */
 
-#about ul {
+#about ul,
+#services ul {
 	margin-top: 30px;
 	border-left: 2px solid #ed5565;
 	list-style-type: none;
 }
 
-#about li {
+#about li,
+#services li {
 	padding: 10px 0;
 	position: relative;
 	font-size: 1.4em;
@@ -367,24 +370,28 @@ header > canvas {
 	font-weight: 400;
 }
 
-#about li:first-child {
+#about li:first-child,
+#services li:first-child {
 	padding-top: 0;
 }
 
-#about li:last-child {
+#about li:last-child,
+#services li:last-child {
 	padding-bottom: 0;
 }
 
-#about li p {
+#about li p,
+#services li p {
 	font-size: 0.7em;
 	font-weight: 300;
 	font-style: italic;
 	margin: 20px 0 0 20px;
 }
 
-#about i {
+#about i,
+#services i {
 	margin: 30px 15px 0 0;
-	// opacity: 0.2;
+	opacity: 0.2;
 }
 
 
